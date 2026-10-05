@@ -1,304 +1,53 @@
-<html lang="en" class="js app-up app-run" style="--dr-touch-scale: 1;"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover,user-scalable=no">
-<title>DELTARUNE Fight Simulator - Boss Fights and Boss Rush Online</title>
-<meta name="description" content="Play 300+ DELTARUNE and UNDERTALE fights online, free: every chapter's bosses, JEVIL, Spamton NEO, Sans, a boss rush, autoplay and replays. Fan-made, no download.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="author" content="puskevi">
-<meta name="application-name" content="DELTARUNE Fight Simulator">
-<meta name="color-scheme" content="dark">
-<link rel="canonical" href="https://deltarunesim.com/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="DELTARUNE Fight Simulator">
-<meta property="og:locale" content="en_US">
-<meta property="og:url" content="https://deltarunesim.com/">
-<meta property="og:title" content="DELTARUNE Fight Simulator - 300+ fights. One tab.">
-<meta property="og:description" content="Fan-made DELTARUNE and UNDERTALE fight simulator. Every chapter, boss rush, autoplay and bonus games. Free in your browser.">
-<meta property="og:image" content="https://deltarunesim.com/assets/og/og_1200x630.png?v=848e21fa0e">
-<meta property="og:image:secure_url" content="https://deltarunesim.com/assets/og/og_1200x630.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The DELTARUNE Fight Simulator logo on a band across a slanted wall of battle screenshots, with the line: Every boss. Free in your browser.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@deltarunesim">
-<meta name="twitter:creator" content="@deltarunesim">
-<meta name="twitter:title" content="DELTARUNE Fight Simulator - 300+ fights. One tab.">
-<meta name="twitter:description" content="Fan-made DELTARUNE and UNDERTALE fight simulator. Every chapter, boss rush, autoplay and bonus games. Free in your browser.">
-<meta name="twitter:image" content="https://deltarunesim.com/assets/og/og_1200x630.png?v=848e21fa0e">
-<meta name="twitter:image:alt" content="The DELTARUNE Fight Simulator logo on a band across a slanted wall of battle screenshots, with the line: Every boss. Free in your browser.">
-<link rel="icon" href="assets/logo/soul_icon32.png" sizes="48x48" type="image/png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/app/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/app/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/logo/soul_icon.png">
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@graph": [
-{
-"@type": "WebSite",
-"@id": "https://deltarunesim.com/#website",
-"url": "https://deltarunesim.com/",
-"name": "DELTARUNE Fight Simulator",
-"alternateName": ["DR Fight Sim", "deltarunesim"],
-"inLanguage": "en"
-},
-{
-"@type": ["VideoGame", "WebApplication"],
-"@id": "https://deltarunesim.com/#app",
-"name": "DELTARUNE Fight Simulator",
-"url": "https://deltarunesim.com/",
-"isPartOf": { "@id": "https://deltarunesim.com/#website" },
-"description": "A free, fan-made battle simulator that runs in your browser. Fight DELTARUNE and UNDERTALE battles from every chapter online, from JEVIL and Spamton NEO to Sans, run a boss rush, watch autoplay, save replays, and play bonus games: Dark World Survivors, Spell Card Rush, blackjack tables, MANIA, Tetris and DARKDLE.",
-"disambiguatingDescription": "An unofficial, fan-made project. It is not affiliated with or endorsed by Toby Fox. DELTARUNE and UNDERTALE are (c) Toby Fox.",
-"applicationCategory": "GameApplication",
-"applicationSubCategory": "Fight simulator",
-"operatingSystem": "Any (web browser)",
-"browserRequirements": "Requires JavaScript and a current browser (Chrome, Edge, Firefox or Safari).",
-"gamePlatform": ["Web browser", "Desktop", "Mobile"],
-"playMode": "SinglePlayer",
-"genre": ["Bullet hell", "Boss rush", "RPG battle", "Fan game"],
-"inLanguage": "en",
-"isAccessibleForFree": true,
-"offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
-"image": "https://deltarunesim.com/assets/og/og_1200x630.png",
-"author": { "@type": "Person", "name": "puskevi", "url": "https://x.com/deltarunesim" },
-"discussionUrl": "https://discord.gg/fWTAXYc4wR",
-"about": [
-{ "@type": "VideoGame", "name": "DELTARUNE", "author": { "@type": "Person", "name": "Toby Fox" } },
-{ "@type": "VideoGame", "name": "UNDERTALE", "author": { "@type": "Person", "name": "Toby Fox" } }
-]
-},
-{
-"@type": "FAQPage",
-"@id": "https://deltarunesim.com/#faq",
-"mainEntity": [
-{ "@type": "Question", "name": "Is it free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is free to play in your browser, with no download, no account and no ads. Any money in it is play money only." } },
-{ "@type": "Question", "name": "Is this the official DELTARUNE game?", "acceptedAnswer": { "@type": "Answer", "text": "No. It is a fan-made project and it is not affiliated with or endorsed by Toby Fox. DELTARUNE and UNDERTALE are (c) Toby Fox. Buy the real games." } },
-{ "@type": "Question", "name": "Does it work on a phone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It has touch controls. Turn the phone sideways for the best view. On iPhone, Add to Home Screen gives you a full-screen app." } },
-{ "@type": "Question", "name": "Can I play one specific boss fight online?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every boss has its own page at deltarunesim.com/fights, and its PLAY THIS FIGHT button opens the simulator with that fight picked. You can also search the fight list with the / key." } },
-{ "@type": "Question", "name": "How do I report a bug?", "acceptedAnswer": { "@type": "Answer", "text": "Join the Discord at discord.gg/fWTAXYc4wR and post in the bug channel. Say which fight, what happened and what you expected. A screenshot or a replay helps a lot." } }
-]
-}
-]
-}
-</script>
-<link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#000000">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="DR Fight Sim">
-<script src="js/boot0-0796dd8d.js"></script><link rel="icon" type="image/png" href="assets/logo/soul_icon32.png"><link rel="apple-touch-icon" href="assets/logo/soul_icon.png">
-<link rel="preload" href="assets/data.json" as="fetch" crossorigin="">
-<link rel="preload" href="assets/atlas_pages.json" as="fetch" crossorigin="">
-<link rel="preload" href="assets/atlas_boot.json" as="fetch" crossorigin="">
-<link rel="preload" href="assets/atlas_boot.png" as="image">
-<link rel="preload" href="assets/fnt_main.png" as="image">
-<link rel="preload" href="assets/fnt_mainbig.png" as="image">
-<link rel="stylesheet" href="app-ad408b54.css">
-<link rel="modulepreload" href="js/c-PQ4TMILZ.js"><link rel="modulepreload" href="js/c-A5GMLS7X.js"><link rel="modulepreload" href="js/c-ERFQ5XJ5.js"><link rel="modulepreload" href="js/c-TLNRDEH7.js"><link rel="modulepreload" href="js/c-JIJMW4NL.js"><link rel="modulepreload" href="js/c-K4VT3MRN.js"><link rel="modulepreload" href="js/c-FM73PZME.js"><link rel="modulepreload" href="js/c-KAZF4TAH.js"><link rel="modulepreload" href="js/c-CC3T77FV.js"><link rel="modulepreload" href="js/c-KOAMMQJW.js"><link rel="modulepreload" href="js/c-56PU5HWG.js"><link rel="modulepreload" href="js/c-T3E4M6V6.js"><link rel="modulepreload" href="js/c-ELMKCXKG.js"><link rel="modulepreload" href="js/c-5GWY74C7.js"><link rel="modulepreload" href="js/c-7AWDC2KH.js"><link rel="modulepreload" href="js/c-KZJY3S2I.js"><link rel="modulepreload" href="js/c-DY63DJRB.js"><link rel="modulepreload" href="js/c-R6ZGGIK3.js"><link rel="modulepreload" href="js/c-SKHI44WQ.js"><link rel="modulepreload" href="js/c-FH23TRST.js"><link rel="modulepreload" href="js/c-BVQNJ42M.js"><link rel="modulepreload" href="js/c-KHHRBGEO.js"><link rel="modulepreload" href="js/c-TJMYVFI6.js"><link rel="modulepreload" href="js/c-SHQD4R7L.js"><link rel="modulepreload" href="js/c-XR6L6BLP.js"><link rel="modulepreload" href="js/c-QMV6D2Z6.js"><link rel="modulepreload" href="js/c-ZWI6JYCA.js"><link rel="modulepreload" href="js/c-DW3P3VHD.js"><link rel="modulepreload" href="js/c-HUT54QNH.js"><link rel="modulepreload" href="js/c-GWGJFA5C.js"><link rel="modulepreload" href="js/c-NBXF7AGP.js"><link rel="modulepreload" href="js/c-A4JEUXWV.js"><link rel="modulepreload" href="js/c-UAONIE64.js"><link rel="modulepreload" href="js/c-EUYLSRUI.js"><link rel="modulepreload" href="js/c-YCOIUV2S.js"><link rel="modulepreload" href="js/c-YLDN2PBY.js"><link rel="modulepreload" href="js/c-YBBOKZDV.js"><link rel="modulepreload" href="js/c-XDVQL6D2.js"><link rel="modulepreload" href="js/c-U2GSTE5J.js"><link rel="modulepreload" href="js/c-5GG5LDNR.js"><link rel="modulepreload" href="js/c-UQBS2WKQ.js"><link rel="modulepreload" href="js/c-NH4O7ON5.js"><link rel="modulepreload" href="js/c-D3V53EHC.js"><link rel="modulepreload" href="js/c-JHLKIZNN.js"><link rel="modulepreload" href="js/c-NXOUC2GO.js"><link rel="modulepreload" href="js/c-W3TICDNI.js"><link rel="modulepreload" href="js/c-32FB6VWK.js"><link rel="modulepreload" href="js/c-LT6TG62I.js"><link rel="modulepreload" href="js/c-T54BFPPN.js"><link rel="modulepreload" href="js/c-SMPWIDX5.js"><link rel="modulepreload" href="js/c-JKCJCN2G.js"><link rel="modulepreload" href="js/c-QXBKP73Z.js"><link rel="modulepreload" href="js/c-CPGW4NVB.js"><link rel="modulepreload" href="js/c-VF7CRPLK.js"><link rel="modulepreload" href="js/c-OKKJ5VOD.js"><link rel="modulepreload" href="js/c-N65L7L6V.js"><link rel="modulepreload" href="js/c-6AIFBO4F.js"><link rel="modulepreload" href="js/c-BSIEL5O4.js"><link rel="modulepreload" href="js/c-TRVK5P5P.js"><style>
-#rotate { position: fixed; inset: 0; z-index: 100001; background: #000; display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: clamp(14px, 3.2vh, 28px); padding: 24px; box-sizing: border-box;
-  font-family: ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace; color: #fff; text-align: center;
-  touch-action: none; user-select: none; -webkit-user-select: none;
-  -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
-#rotate[hidden] { display: none; }
-#rotate .frame { position: absolute; inset: 14px; border: 3px solid #fff; box-shadow: inset 0 0 0 3px #000, inset 0 0 0 6px #404040;
-  pointer-events: none; }
-#rotate .phone { width: min(46vw, 190px); aspect-ratio: 1; }
-#rotate .phone svg { width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 0 10px rgba(255,255,0,.18)); }
-#rotate .turn { transform-box: fill-box; transform-origin: 50% 50%;
-  animation: rot-turn 2.8s cubic-bezier(.65, 0, .35, 1) infinite; }
-@keyframes rot-turn { 0%, 22% { transform: rotate(0deg); } 50%, 78% { transform: rotate(-90deg); } 100% { transform: rotate(0deg); } }
-#rotate .arrow { animation: rot-arrow 2.8s linear infinite; }
-@keyframes rot-arrow { 0%, 20% { opacity: 1; } 24%, 76% { opacity: .15; } 80%, 100% { opacity: 1; } }
-#rotate .heart { animation: rot-beat 1.2s steps(1, end) infinite; }
-@keyframes rot-beat { 0%, 60% { opacity: 1; } 70% { opacity: .35; } 80%, 100% { opacity: 1; } }
-#rotate h1 { margin: 0; font-size: clamp(26px, 8.2vw, 40px); line-height: 1.1; letter-spacing: .06em; font-weight: 800; }
-#rotate h1 b { color: #ffff00; }
-#rotate p { margin: 0; max-width: 22em; font-size: clamp(16px, 4.6vw, 21px); line-height: 1.45; color: #d0d0d0; }
-#rotate p b { color: #fff; }
-#rotate button { margin-top: 6px; font: 800 clamp(16px, 4.8vw, 21px) ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace;
-  letter-spacing: .06em; color: #fff; background: #000; border: 3px solid #fff; padding: .7em 1.1em; min-height: 52px;
-  cursor: pointer; -webkit-tap-highlight-color: transparent; }
-#rotate button:active, #rotate button:focus-visible { color: #ffff00; border-color: #ffff00; outline: none; }
-#rotate button.full { border-color: #ffff00; color: #ffff00; }
-#rotate button.full + button { margin-top: 0; }
-#rotate button[hidden] { display: none; }
-#rotate button svg { width: .8em; height: .8em; margin-right: .6em; vertical-align: -.05em; }
-#rotate small { color: #808080; font-size: clamp(13px, 3.6vw, 16px); }
-#rotate small.lim { max-width: 24em; line-height: 1.4; }
-#rotpill { position: fixed; left: 50%; bottom: calc(14px + env(safe-area-inset-bottom)); transform: translateX(-50%);
-  z-index: 100000; font: 700 15px ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace; letter-spacing: .05em; color: #e0e0e0;
-  background: rgba(0,0,0,.9); border: 2px solid #fff; padding: 10px 16px; white-space: nowrap; pointer-events: none;
-  transition: opacity .4s; }
-#rotpill b { color: #ffff00; }
-#rotpill.top { top: calc(14px + env(safe-area-inset-top)); bottom: auto; }   /* the first visit's: over the title, clear of the touch deck */
-#rotpill[hidden] { display: none; }
-#rotate h1 img, #rotate button img { image-rendering: pixelated; display: inline-block; vertical-align: middle; }
-#rotate h1 img { display: block; margin: 0 auto; max-width: 100%; }
-#rotate h1 img + img { margin-top: .35em; }
-@media (prefers-reduced-motion: reduce) {
-  #rotate .turn, #rotate .heart, #rotate .arrow { animation: none; } }
-</style><style id="dr-shell-style">
-:root {
-  --dr-bg:#000000; --dr-fg:#ffffff; --dr-sel:#ffff00; --dr-dim:#808080;
-  --dr-box:#1a1426; --dr-warn:#ff8000;
-  --dr-body: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-}
-/* The canvas leaves the flex column in touch mode and is placed by Shell. */
-body.shell-touch { display:block; padding:0; min-height:100dvh; }
-body.shell-touch #loading { display:none; }
+<!DOCTYPE html>
+<html lang="en" class="js app-up app-run" style="--dr-touch-scale: 1;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover,user-scalable=no">
+    <title>DELTARUNE Fight Simulator - Boss Fights and Boss Rush Online</title>
+    
+    <!-- 🔀 SUBFOLDER ARCHITECTURE ROUTING TAG -->
+    <base href="/deltasim/">
 
-#dr-deck { position:fixed; left:0; top:0; width:100%; height:100%; z-index:10;
-           pointer-events:none; font-family:var(--dr-body); -webkit-user-select:none; user-select:none;
-           -webkit-tap-highlight-color:transparent; -webkit-touch-callout:none; }
-#dr-deck * { box-sizing:border-box; }
-#dr-deck .w { position:absolute; z-index:2; pointer-events:auto; touch-action:none; display:none;
-              align-items:center; justify-content:center;
-              background:var(--dr-bg); color:var(--dr-fg);
-              border:2px solid var(--dr-fg); border-radius:0;
-              font-family:var(--dr-body); font-size:17px; line-height:1.15;
-              transition:background-color 80ms linear, color 80ms linear, opacity 80ms linear; }
-#dr-deck .w.on { display:flex; }
-#dr-deck .w.hit { background:var(--dr-fg); color:var(--dr-bg); }
-#dr-deck .w.sel { border-color:var(--dr-sel); color:var(--dr-sel); }
-#dr-deck .w.off { color:var(--dr-dim); border-color:var(--dr-dim); }
-
-/* command cells carry the port's own spr_bt* art; no border, the sprite IS the button */
-#dr-deck .cmd { border:none; background-color:transparent; }
-#dr-deck .cmd.hit { background-color:#ffffff22; }
-
-/* grid cells and target rows: label left, meta right */
-#dr-deck .cell { justify-content:space-between; padding:0 12px; text-align:left; }
-#dr-deck .cell .lb { overflow:hidden; white-space:nowrap; }
-#dr-deck .cell .mt { color:var(--dr-warn); font-size:15px; margin-left:10px; flex:none; }
-#dr-deck .cell.off .mt { color:var(--dr-dim); }
-
-/* the spell/ACT description. At 0.5969 the port draws this starting past the right edge of a 390px
-   screen, so on a phone it is literally unreadable. Same string, shown where a thumb can read it -
-   the ported draw is not moved. */
-#dr-deck .desc { border:none; background:transparent; color:var(--dr-dim); font-size:16px;
-                 display:none; align-items:flex-start; justify-content:flex-start; padding:0 12px;
-                 white-space:pre-line; line-height:1.25; }
-#dr-deck .desc.on { display:flex; }
-
-/* attack-bar press strips: the one moment the port asks for a few-pixel timing window */
-#dr-deck .press { font-size:22px; letter-spacing:2px; background:var(--dr-box); }
-#dr-deck .press.hit { background:var(--dr-fg); color:var(--dr-bg); }
-
-/* the floating stick: a capture zone with no border, and a ring drawn where the thumb landed */
-#dr-deck .zone { border:none; background:transparent; }
-/* the utility row - ESC and F1 - deliberately quiet: they are not part of playing a round */
-#dr-deck .util { border:2px solid #ffffff40; background:#00000090; display:flex;
-                 align-items:center; justify-content:center; }
-#dr-deck .util.recede { opacity:.2; pointer-events:none; }
-#dr-deck .util.hit { background:#ffffff30; }
-#dr-deck .ring, #dr-deck .ghost { position:absolute; z-index:1; pointer-events:none;
-                                  border:2px solid var(--dr-fg); border-radius:50%; display:none; }
-#dr-deck .ring.on { display:block; }
-#dr-deck .ghost { opacity:.18; }
-#dr-deck .ghost.on { display:block; }
-#dr-deck .nub { position:absolute; z-index:1; pointer-events:none; border:2px solid var(--dr-fg);
-                border-radius:50%; width:26px; height:26px; display:none; }
-#dr-deck .nub.on { display:block; }
-
-#dr-deck .rnd { border-radius:50%; font-size:26px; letter-spacing:1px; background:#ffffff14; }
-/* the one documented recession: while a wave is live Z and X do nothing, so they get out of the way */
-#dr-deck .rnd.recede { opacity:.25; pointer-events:none; }
-</style><style id="dr-touch-style">
-body.shell-touch { touch-action:none; -webkit-user-select:none; user-select:none; -webkit-touch-callout:none; }
-#dr-deck { --ctl-op:1; }
-#dr-deck .zone { z-index:1; }
-#dr-deck .rnd, #dr-deck .nav, #dr-deck .ring, #dr-deck .nub, #dr-deck .dpx { opacity:var(--ctl-op); }
-#dr-deck .ghost { opacity:calc(var(--ctl-op) * .18); }
-#dr-deck .rnd { font-size:20px; }
-#dr-deck .nav { background:#00000090; border:2px solid #ffffffa0; background-repeat:no-repeat; background-position:center; image-rendering:pixelated; }
-#dr-deck .nav.hit, #dr-deck .rnd.hit { background-color:var(--dr-fg); }
-#dr-deck .dpx { position:absolute; z-index:0; pointer-events:none; display:none; border:2px solid #ffffff80; background:#ffffff0c; }
-#dr-deck .dpx.on { display:block; }
-#dr-deck .cmd.off { opacity:.35; }
-#dr-deck .util.hold { opacity:.4; }
-#dr-deck .util.hold.arming { opacity:1; background-color:#ff000070; transition:background-color .6s linear; }
-</style></head>
-<body>
-<noscript><p class="nojs"><b>This simulator needs JavaScript.</b> Turn JavaScript on for this site and reload the page. What it is and how it works is written out below.</p></noscript>
-<p id="oldbrowser" role="alert"><b>This browser is too old for the simulator.</b> Please update it, or open the page in a current Chrome, Edge, Firefox or Safari. What the simulator is and how it works is written out below.</p>
-
-<script type="application/json" id="dr-boot">{"main":"js/main-4ZWNJP2V.js","boot":["js/c-BSIEL5O4.js","js/c-6AIFBO4F.js","js/c-T3E4M6V6.js","js/c-TRVK5P5P.js","js/c-JIJMW4NL.js","js/c-K4VT3MRN.js","js/c-ELMKCXKG.js","js/c-ERFQ5XJ5.js","js/c-BVQNJ42M.js","js/c-56PU5HWG.js","js/c-A5GMLS7X.js","js/c-KOAMMQJW.js","js/c-PQ4TMILZ.js","js/c-N65L7L6V.js","js/c-XR6L6BLP.js","js/c-TLNRDEH7.js","js/c-FM73PZME.js","js/c-KAZF4TAH.js","js/c-JKCJCN2G.js","js/c-VF7CRPLK.js","js/c-TJMYVFI6.js","js/c-5GWY74C7.js","js/c-7AWDC2KH.js","js/c-KZJY3S2I.js","js/c-DY63DJRB.js","js/c-R6ZGGIK3.js","js/c-SKHI44WQ.js","js/c-QMV6D2Z6.js","js/c-ZWI6JYCA.js","js/c-DW3P3VHD.js","js/c-HUT54QNH.js","js/c-YLDN2PBY.js","js/c-GWGJFA5C.js","js/c-NBXF7AGP.js","js/c-A4JEUXWV.js","js/c-YBBOKZDV.js","js/c-FH23TRST.js","js/c-UAONIE64.js","js/c-EUYLSRUI.js","js/c-YCOIUV2S.js","js/c-XDVQL6D2.js","js/c-U2GSTE5J.js","js/c-5GG5LDNR.js","js/c-UQBS2WKQ.js","js/c-NH4O7ON5.js","js/c-D3V53EHC.js","js/c-QXBKP73Z.js","js/c-JHLKIZNN.js","js/c-NXOUC2GO.js","js/c-W3TICDNI.js","js/c-CPGW4NVB.js","js/c-32FB6VWK.js","js/c-LT6TG62I.js","js/c-T54BFPPN.js","js/c-SMPWIDX5.js","js/c-KHHRBGEO.js","js/c-CC3T77FV.js","js/c-OKKJ5VOD.js","js/c-SHQD4R7L.js"],"deps":{"js/c-2LFXE4NQ.js":["js/c-3SX4QK5Q.js"],"js/c-2QL5KOMB.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-2WDSO2WC.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-3RUTOSKZ.js":["js/c-ASHJIYVM.js"],"js/c-4AFVLCJS.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-4CLHI2G6.js":["js/c-4T5HFYIG.js","js/c-5NQ5QMEC.js","js/c-Z5255M2Z.js"],"js/c-4ESLKMIN.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-4R5OYZ5P.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-5LIFVKIQ.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-5RJRBNBI.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-656VSRFJ.js":["js/c-2WXRHPN2.js"],"js/c-6JU63MYQ.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-6Q2EILK4.js":["js/c-2WXRHPN2.js"],"js/c-6WKLLG5M.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-6YDAEL2S.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-7CYNS4C6.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-7J4PEK5V.js":["js/c-3SX4QK5Q.js","js/c-ASHJIYVM.js","js/c-PAY4HH4C.js"],"js/c-7N6KDXV7.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-7OZBCZLJ.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-7WMNG6KF.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-ANBEW5EQ.js":["js/c-3SX4QK5Q.js","js/c-ASHJIYVM.js","js/c-PAY4HH4C.js"],"js/c-BXG6A3SW.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-D52QI46X.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-DGN32JZM.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-DVDRQMAI.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-DVOMVQLU.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-F5S2FWZL.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-FOQJ4F7K.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-FWFIOQW2.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-GLS5OH5E.js":["js/c-7OOOQ73B.js"],"js/c-HHN4HLBT.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-I373S3J4.js":["js/c-4T5HFYIG.js","js/c-5NQ5QMEC.js","js/c-Z5255M2Z.js"],"js/c-IYFNEK4D.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-KLG4TCJS.js":["js/c-5NQ5QMEC.js"],"js/c-L72MFHNU.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-LO6TTOSV.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-MDL7S5IR.js":["js/c-4T5HFYIG.js"],"js/c-MHQW6LRD.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-MXOI5GTD.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-N3FCCTDG.js":["js/c-4T5HFYIG.js","js/c-5NQ5QMEC.js","js/c-Z5255M2Z.js"],"js/c-NAI3DOBF.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-NSBOEPGD.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-OFHTBIIB.js":["js/c-7OOOQ73B.js","js/c-MWW6CB74.js"],"js/c-OWDYFKML.js":["js/c-RVH4GAXR.js"],"js/c-PFJG4MDV.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-PQVEJZDO.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-QY46MZLO.js":["js/c-7OOOQ73B.js"],"js/c-RLSVA2CE.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-RQH2YOS6.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-SXHXQRNB.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-SZ7DM6LK.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-T3RDDXNX.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-TGNBPU5Z.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-TJVX4667.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-UTCFDIX6.js":["js/c-3SX4QK5Q.js","js/c-ASHJIYVM.js","js/c-PAY4HH4C.js"],"js/c-UYBQFODH.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-V776OWBN.js":["js/c-4BR4GFUX.js"],"js/c-VJ7YAE5H.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-WISQ4LIC.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-X4QKRX6X.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-XW5Q7BAL.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"],"js/c-ZGBBZ2TJ.js":["js/c-RVH4GAXR.js"],"js/c-ZGZVXW6L.js":["js/c-4BR4GFUX.js","js/c-VOJITL4C.js"]},"groups":{"ut":"js/c-OFHTBIIB.js","ch4":"js/c-I373S3J4.js","ch5":"js/c-UTCFDIX6.js"}}</script>
-<script src="js/boot2-08735c02.js"></script>
-<canvas id="game" width="1280" height="960" tabindex="0" style="width: 1016px; height: 762px; margin-top: 8px;"></canvas>
-<canvas id="info" width="640" height="48" style="display: none; width: 1016px; height: 76px;"></canvas>
-<input id="textin" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="search">
-<div id="focushint" role="button" aria-label="Click to give the keyboard back to the game" style="left: 575px; top: 23px;"><svg width="14" height="14" viewBox="0 0 7 7" shape-rendering="crispEdges"><path fill="#ff0000" d="M1 1h2v1h1V1h2v1h1v2H6v1H5v1H4v1H3V6H2V5H1V4H0V2h1z"></path></svg><b>CLICK</b> TO FOCUS<i>keys go to the browser</i></div>
-<div id="loading" hidden="">loading…</div>
-<section id="site-info" aria-labelledby="si-title">
-<button type="button" class="si-close" aria-label="Close this page and go back to the simulator">CLOSE</button>
-<header>
-<h1 id="si-title">DELTARUNE Fight Simulator</h1>
-<p class="lede">A free, fan-made battle simulator for DELTARUNE and UNDERTALE fights. It runs in your browser: no download, no account, no ads.</p>
-</header>
-<h2 id="si-what">What it is</h2>
-<p>Pick a fight and play it. The battles are rebuilt one line at a time from the original games' battle code, so the attacks, the ACTs, the spells and the text work the way you remember. You can practise a single attack, replay a whole fight, or let the autoplay SOUL show you a clean run.</p>
-<p>It is a fan project, made and maintained by one person. It is in <strong>beta</strong>, so expect a few bugs.</p>
-<h2 id="si-features">What is in it</h2>
-<ul>
-<li><strong>Fights by chapter.</strong> More than 300 encounters: bosses and regular enemies from every DELTARUNE chapter, plus UNDERTALE fights. Every boss has its own page: see <a href="/fights">all the boss fights</a>.</li>
-<li><strong>Boss rush.</strong> Every boss of a chapter, back to back. There is also a gauntlet and a daily challenge.</li>
-<li><strong>Autoplay.</strong> A bot that dodges for you, to watch a pattern or learn a hard attack.</li>
-<li><strong>Replays, rewind and practice tools.</strong> Rewind a mistake, slow the game down, or drill one attack.</li>
-<li><strong>Bonus games.</strong> Dark World Survivors (a survival mode), Spell Card Rush (a bullet-hell boss rush), blackjack tables, MANIA (a rhythm game), Tetris (dodge falling blocks inside the battle box) and DARKDLE (a daily DELTARUNE guessing game).</li>
-<li><strong>Works on phones.</strong> Touch controls, a gamepad mode, and keyboard controls on a computer.</li>
-</ul>
-<h2 id="si-how">How to play</h2>
-<ol>
-<li>Open <a href="https://deltarunesim.com/">deltarunesim.com</a> and press <kbd>Z</kbd> or <kbd>Enter</kbd> (or tap) on the title screen.</li>
-<li>Choose a fight from the list. The tabs sort them by chapter; <kbd>/</kbd> searches.</li>
-<li>In battle, <kbd>Z</kbd> confirms, <kbd>X</kbd> goes back, and the arrow keys move your SOUL. Dodge the attacks and win by fighting or by sparing.</li>
-<li>Press <kbd>Tab</kbd> for the toolbox (practice, rewind, autoplay) and <kbd>?</kbd> for every key.</li>
-</ol>
-<h2 id="si-faq">Questions</h2>
-<h3>Is it free?</h3>
-<p>Yes. It is free to play in your browser, with no download, no account and no ads. Any money in it is play money only.</p>
-<h3>Is this the official DELTARUNE game?</h3>
-<p>No. It is a fan-made project and it is not affiliated with or endorsed by Toby Fox. DELTARUNE and UNDERTALE are (c) Toby Fox. Buy the real games.</p>
-<h3>Does it work on a phone?</h3>
-<p>Yes. It has touch controls. Turn the phone sideways for the best view. On iPhone, Add to Home Screen gives you a full-screen app.</p>
-<h3>Can I play one specific boss fight online?</h3>
-<p>Yes. Every boss has its own page on the <a href="/fights">fights page</a>, and its PLAY THIS FIGHT button opens the simulator with that fight picked. You can also search the fight list with the <kbd>/</kbd> key.</p>
-<h3>How do I report a bug?</h3>
-<p>Join the Discord at <a href="https://discord.gg/fWTAXYc4wR" target="_blank" rel="noopener noreferrer">discord.gg/fWTAXYc4wR</a> and post in the bug channel. Say which fight, what happened and what you expected. A screenshot or a replay helps a lot.</p>
-<h3>Does the site record my fights?</h3>
-<p>Only anonymously, with no name, account or cookie, and nothing you type. When a fight ends, the simulator sends its result, the hits taken and how long it lasted; the totals are public on the <a href="/stats">fight stats page</a>. It also sends bug reports that only the developer sees: errors in the game's code, fights that freeze, frame rate with a rough device type (browser and version, phone or computer), files that would not load, and where fights are won, lost or left. To stop sending all of it, turn off Share anonymous stats and bug reports in CONFIG, SYSTEM. Browsers set to Do Not Track or Global Privacy Control send nothing.</p>
-<h2 id="si-legal">Disclaimer</h2>
-<p class="fine">DELTARUNE Fight Simulator is an unofficial, fan-made project. It is not affiliated with, endorsed by or connected to Toby Fox or the DELTARUNE team. DELTARUNE and UNDERTALE, their characters, music, sprites and text are (c) Toby Fox. Everything here is free, and any money in it is play money only. Made by puskevi. Follow <a href="https://x.com/deltarunesim" target="_blank" rel="noopener noreferrer">@deltarunesim</a> on X for updates.</p>
-<p class="fine"><a href="/fights">All fights</a> · <a href="/about">About</a> · <a href="/privacy">Privacy</a> · <a href="/schools">For teachers and school IT</a> · <a href="/updates">Update notes</a></p>
-<p class="fine">Discord and bird pixel icons from the <a href="https://github.com/hackernoon/pixel-icon-library" target="_blank" rel="noopener noreferrer">HackerNoon Pixel Icon Library</a>, licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.</p>
-</section>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;fc292208510f43a7ba0e7485b8a8a372&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a45b94fcbe3eceb6',t:'MTc5MTE5NDQ1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-
-<script type="module" src="js/main-4ZWNJP2V.js"></script><div id="rotate" hidden="" role="dialog" aria-modal="true" aria-label="Turn your phone sideways">
-    <div class="frame"></div>
-    <div class="phone">
-<svg viewBox="0 0 32 32" shape-rendering="crispEdges" aria-hidden="true">
-  <defs><marker id="rotHead" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse">
-    <path d="M0 0L6 3L0 6z" fill="#ffff00"></path></marker></defs>
-  <g class="turn">
-    <path fill="#fff" d="M11 5h10v1h1v20h-1v1H11v-1h-1V6h1z"></path>
-    <path fill="#000" d="M12 8h8v15h-8z"></path>
-    <path fill="#404040" d="M14 6h4v1h-4zM15 24h2v2h-2z"></path>
-    <path class="heart" fill="#ff0000" transform="translate(13.5 13)" d="M0 0h2v1H0zM3 0h2v1H3zM0 1h5v1H0zM1 2h3v1H1zM2 3h1v1H2z"></path>
-    <g class="arrow" shape-rendering="geometricPrecision" fill="none" stroke="#ffff00" stroke-width="1.8" stroke-linecap="round">
-      <path d="M21.5 3.6 A13.5 13.5 0 0 0 4.4 10.2" marker-end="url(#rotHead)"></path>
-      <path d="M10.5 28.4 A13.5 13.5 0 0 0 27.6 21.8" marker-end="url(#rotHead)"></path>
-    </g>
-  </g>
-</svg></div>
-    <h1>TURN YOUR<br><b>PHONE</b></h1>
-    <p>This is best enjoyed <b>sideways</b>: the battle gets almost twice as big and your thumbs get the whole screen.</p>
-    <button type="button" class="full" hidden=""><svg viewBox="0 0 10 10" shape-rendering="crispEdges" aria-hidden="true"><path fill="#ffff00" d="M0 0h4v1H1v3H0zM6 0h4v4H9V1H6zM0 6h1v3h3v1H0zM9 6h1v4H6V9h3z"></path></svg>FULLSCREEN</button>
-    <button type="button" class="stay"><svg viewBox="0 0 5 4" shape-rendering="crispEdges" aria-hidden="true"><path fill="#ff0000" d="M0 0h2v1H0zM3 0h2v1H3zM0 1h5v1H0zM1 2h3v1H1zM2 3h1v1H2z"></path></svg>I WANNA SUFFER</button>
-    <small>(turn it any time, the game follows)</small>
-    <small class="lim">* Made for keyboard on a computer - the phone controls work but are not the intended way to play.</small></div><div id="rotpill" hidden="">best enjoyed <b>sideways</b> ↻</div><canvas style="position: fixed; left: 0px; top: 0px; display: none; z-index: 5; image-rendering: pixelated; pointer-events: auto; background: transparent;"></canvas><div id="dr-deck"></div></body></html>
+    <!-- SEO & METADATA CONFIGURATION -->
+    <meta name="description" content="Play 300+ DELTARUNE and UNDERTALE fights online, free: every chapter's bosses, JEVIL, Spamton NEO, Sans, a boss rush, autoplay and replays. Fan-made, no download.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="puskevi">
+    <meta name="application-name" content="DELTARUNE Fight Simulator">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://deltarunesim.com">
+    
+    <!-- OPEN GRAPH PROPERTIES & METADATA -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DELTARUNE Fight Simulator">
+    <meta property="og:title" content="DELTARUNE Fight Simulator - 300+ fights. One tab.">
+    <meta property="og:image" content="https://deltarunesim.comassets/og/og_1200x630.png?v=848e21fa0e">
+    
+    <!-- STRUCTURED SCHEMA DATA (JSON-LD) & CONFIG -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+    {
+    "@type": "WebSite",
+    "@id": "https://deltarunesim.com#website",
+    "url": "https://deltarunesim.com",
+    "name": "DELTARUNE Fight Simulator"
+    }
+    ]
+    }
+    </script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- INITIAL BOOT ENGINE & PRELOADS -->
+    <script src="js/boot0-0796dd8d.js"></script>
+    <link rel="stylesheet" href="app-ad408b54.css">
+    
+    <!-- CORE SCRIPTS -->
+    <script type="module" src="scripts/boot2-08735c02.js"></script>
+    <script type="module" src="scripts/main-4ZWNJP2V.js"></script>
+</head>
+<body style="background: #000000; margin: 0; overflow: hidden;">
+    <div id="app"></div>
+</body>
+</html>
